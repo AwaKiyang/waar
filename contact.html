@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/waar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/image/Pngtree—cute red-haired toy poodle puppy_15672400.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>ContactUs</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Teacup poodle</h1>
+        </div>
+        <ul id="menulist">
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <script>
+            let menulist = document.getElementById("menulist")
+            menulist.style.maxHeight = "0px";
+            function toggleMenu(){
+                if(menulist.style.maxHeight == "0px")
+                {
+                    menulist.style.maxHeight = "300px";
+                }
+                else{
+                    menulist.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </nav>
+    <div class="contact_body">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h2>GEt IN TOUCH</h2>
+            <input type="hidden" name="access_key" value="8a631242-2785-4600-9073-66228d1bb043">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email id" required>
+            <input type="text"  name="phone" id="phone" placeholder="phone no" required>
+            <textarea name="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button type="submit">send</button>
+        </form>
+    </div>
+    <footer class="cont">
+        <div class="logo">
+            <h1>Teacup Poodle</h1>
+        </div>
+        <hr>
+        <div class="section1">
+            <div class="sec2">
+                <div class="sec2_img">
+                    <img src="/image/location.png" alt="Location Icon">
+                </div>
+                <div class="sec2_text">
+                    <p>USA</p>
+                    <p>New Jersey</p>
+                </div>
+            </div>
+            <div class="sec2">
+                <div class="sec2_img">
+                    <img src="/image/phone.png" alt="Phone Icon">
+                </div>
+                <div class="sec2_text">
+                    <p>+1 (602)-301-1487</p>
+                </div>
+            </div>
+            <div class="sec2">
+                <div class="sec2_img">
+                    <img src="/image/time.png" alt="Clock Icon">
+                </div>
+                <div class="sec2_text">
+                    <p>Mon-Fri: 9 AM - 8 PM</p>
+                    <p>Sat-Sun: Closed</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="section2">
+            <ul id="menulist">
+                <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>2024 &copy; All Rights Reserved by MyLovelyPoodle</p>
+            <div class="social">
+                <a href="https://www.facebook.com/share/1BkD6rGcVw/?mibextid=LQQJ4d"><img src="/image/facebook.png" alt="Facebook Icon"></a>
+                <a href="#"><img src="/image/email.png" alt="Email Icon"></a>
+                <a href="#"><img src="/image/whastapp.png" alt="WhatsApp Icon"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

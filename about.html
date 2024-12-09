@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/waar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/image/Pngtree—cute red-haired toy poodle puppy_15672400.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>About_page</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Teacup poodle</h1>
+        </div>
+        <ul id="menulist">
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <script>
+            let menulist = document.getElementById("menulist")
+            menulist.style.maxHeight = "0px";
+            function toggleMenu(){
+                if(menulist.style.maxHeight == "0px")
+                {
+                    menulist.style.maxHeight = "300px";
+                }
+                else{
+                    menulist.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </nav>
+    <div class="about_message">
+        <div class="about_text">
+            <h1>ABOUT US</h1>
+            <hr style="width: 50px; height: 3px; background-color: #C5705D; border: none; margin: 10px auto;">
+            <p>ever since we began caring for and breeding puppies we have been clear on our mission:
+                to ensure that every poodle comes into the world ready to love and be loved by families across
+                the country. It's a simple mission that requires a lot of work. But we love it
+            </p><br>
+            <p>At MyLovelyPoodle we have the widest selection of companions for you we have spent our 8years+ raising poodles, we want you to feel secure in your purchase and we are exicted to be there on your journey, whether you are a new pet parent welcoming your first teacup poodle into
+                the family or you're a seasoned pro just adding the fourth poodle to the pack
+            </p>
+           </div> 
+    </div>
+    <div class="fun-facts">
+        <div class="fact">
+            <h2 class="counter" data-target="487">0</h2>
+            <p>Happy Customers</p>
+        </div>
+        <div class="fact">
+            <h2 class="counter" data-target="8">0</h2>
+            <p>Years of Experience</p>
+        </div>
+        <div class="fact">
+            <h2 class="counter" data-target="57">0</h2>
+            <p>Poodles Adopted This Year</p>
+        </div>
+        <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                const counters = document.querySelectorAll(".counter");
+
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute("data-target");
+                        const count = +counter.innerText;
+
+                        // Increment logic
+                        const increment = target / 200;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + increment);
+                            setTimeout(updateCount, 10);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+
+                    updateCount();
+                });
+            });
+        </script>
+    </div>
+    <footer class="cont">
+    <div class="logo">
+        <h1>Teacup Poodle</h1>
+    </div>
+    <hr>
+    <div class="section1">
+        <div class="sec2">
+            <div class="sec2_img">
+                <img src="/image/location.png" alt="Location Icon">
+            </div>
+            <div class="sec2_text">
+                <p>USA</p>
+                <p>New Jersey</p>
+            </div>
+        </div>
+        <div class="sec2">
+            <div class="sec2_img">
+                <img src="/image/phone.png" alt="Phone Icon">
+            </div>
+            <div class="sec2_text">
+                <p>+1 (602)-301-1487</p>
+            </div>
+        </div>
+        <div class="sec2">
+            <div class="sec2_img">
+                <img src="/image/time.png" alt="Clock Icon">
+            </div>
+            <div class="sec2_text">
+                <p>Mon-Fri: 9 AM - 8 PM</p>
+                <p>Sat-Sun: Closed</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="section2">
+        <ul id="menulist">
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="copyright">
+        <p>2024 &copy; All Rights Reserved by MyLovelyPoodle</p>
+        <div class="social">
+            <a href="https://www.facebook.com/share/1BkD6rGcVw/?mibextid=LQQJ4d"><img src="/image/facebook.png" alt="Facebook Icon"></a>
+            <a href="#"><img src="/image/email.png" alt="Email Icon"></a>
+            <a href="https://wa.me/message/16023011487"><img src="/image/whastapp.png" alt="WhatsApp Icon"></a>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
